@@ -5,7 +5,6 @@ import axios from 'axios';
 const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
   const handleLogin = async () => {
     try {
       const response = await axios.post('https://localhost:7080/api/auth/login', {
