@@ -11,9 +11,9 @@ const LoginPage = () => {
         email,
         password,
       });
-
+      
       const token = response.data.token; 
-      localStorage.setItem('jwt', token); //  Save token
+      localStorage.setItem('jwt', token); //  Saving token
 
       alert('Login successful!');
       window.location.href = '/hr-dashboard'; 
