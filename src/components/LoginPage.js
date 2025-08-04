@@ -130,7 +130,7 @@ const LoginPage = () => {
       return;
     }
     try {
-      const response = await axios.post('https://localhost:7080/api/auth/login', {
+      const response = await axios.post('https://localhost:7216/api/auth/login', {
         email,
         password,
       });

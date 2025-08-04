@@ -22,7 +22,7 @@ const StatsCards = () => {
       });
 
     // Fetch one active job for display inside Active Jobs card
-    API.get('/api/hr/active-job')
+    API.get('/api/hr/active-jobs')
       .then((res) => {
         setActiveJob(res.data);
       })
