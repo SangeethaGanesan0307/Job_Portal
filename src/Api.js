@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://localhost:7080', //  backend base URL
+  // baseURL: 'https://localhost:7080', //  backend base URL
+  baseURL: 'https://localhost:7216'
 });
 
 // Attach JWT token from localStorage automatically to every request
