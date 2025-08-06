@@ -22,11 +22,11 @@ const CreateJobForm = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    API.get('/api/hr/department')
+    API.get('/api/departments')
       .then(res => setDepartments(res.data))
       .catch(err => console.error("Error loading departments:", err));
 
-    API.get('/api/hr/location')
+    API.get('/api/locations')
       .then(res => setLocations(res.data))
       .catch(err => console.error("Error loading locations:", err));
   }, []);
